@@ -1,0 +1,26 @@
+{
+  "name": "github_bot",
+  "version": "1.0.0",
+  "description": "A github action bot to manage workflow",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "package-lock.json": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VtuberHub/github_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VtuberHub/github_bot/issues"
+  },
+  "homepage": "https://github.com/VtuberHub/github_bot#readme"
+}
