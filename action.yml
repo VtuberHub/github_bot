@@ -1,13 +1,16 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'github workflows bot'
+description: 'manage github workflows'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  github-token:  
+    description: 'The GITHUB_TOKEN secret'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  sync-labels:
+    description: 'Whether or not to remove labels when matching files are reverted'
+    default: false
+    required: false
+  keywords-labels:
+    description: 'a map from keywords to labels'
+    default: '.github/labeler.yml'
 runs:
   using: 'node12'
   main: 'dist/index.js'
